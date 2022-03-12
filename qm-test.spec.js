@@ -17,6 +17,6 @@ describe('QM Kontakt Test', () => {
     cy.visit('www.qualityminds.de/')
     cy.contains('Kontakt').click().snapshot()
     cy.contains('hello@qualityminds.de').should('exist')
-
+    cy.go('back')
   })
 })
